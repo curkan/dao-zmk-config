@@ -26,6 +26,16 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        strelka {
+            bindings = <&kp MINUS>;
+            key-positions = <33 34>;
+            layers = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,9 +50,9 @@
 
         lower_layer {
             bindings = <
-&mt LGUI F1     &kp EXCLAMATION  &kp AT_SIGN     &kp HASH         &kp DOLLAR    &kp PERCENT  &kp CARET     &kp AMPERSAND     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK      &trans
-&mt LCTRL PLUS  &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp N7            &kp N8                &kp NUMBER_9           &kp N0            &mt RCTRL MINUS
-&mt LALT EQUAL  &trans           &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans        &trans       &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp MINUS              &kp GREATER_THAN  &kp RALT
+&mt LGUI F1     &kp EXCLAMATION  &kp AT_SIGN     &kp HASH         &kp DOLLAR    &kp PERCENT  &kp CARET     &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&mt LCTRL PLUS  &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp N7            &kp N8             &kp NUMBER_9          &kp N0                 &kp PIPE
+&mt LALT EQUAL  &trans           &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans        &trans       &kp SQT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS             &kp GREATER_THAN       &kp RALT
                                                  &lt ADJ TAB      &trans        &trans       &trans        &trans            &lt ADJ DEL
             >;
         };
