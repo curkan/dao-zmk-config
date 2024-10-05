@@ -59,10 +59,10 @@
 
         raise_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans
-                        &trans  &trans  &trans  &to 0   &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans        &trans           &trans  &trans
+                        &trans  &trans  &trans  &to 0           &trans    &trans
             >;
         };
 
