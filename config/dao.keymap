@@ -29,9 +29,18 @@
     combos {
         compatible = "zmk,combos";
 
-        semicolon {
-            bindings = <&kp SEMICOLON>;
+        strelka {
+            bindings = <&add_arrow>;
             key-positions = <39 40>;
+        };
+    };
+
+    macros {
+        add_arrow: add_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "ADD_ARROW";
         };
     };
 
