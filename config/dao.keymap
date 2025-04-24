@@ -29,10 +29,9 @@
     combos {
         compatible = "zmk,combos";
 
-        strelka {
-            bindings = <&kp MINUS>;
-            key-positions = <33 34>;
-            layers = <1>;
+        semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <39 40>;
         };
     };
 
